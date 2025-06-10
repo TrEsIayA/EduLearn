@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: safira_march;
+  src: url(safira.ttf);
+}
+@font-face {
+  font-family: codigra;
+  src: url(Codigra.ttf);
+}
+@font-face {
+  font-family: montserrat;
+  src: url(Montserrat-Medium.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-top: 400px;
+}
+
+.form-box {
+  background-color: #ffe893;
+  border: 1px solid black;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.form-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 40px #ff745f;
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: black;
+  text-shadow: 0 0 10px #ff745f;
+  font-family: codigra;
+}
+
+.sign_area a {
+  color: black;
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: montserrat;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  color: black;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ff745f;
+  border-radius: 20px;
+  outline: none;
+  font-family: montserrat
+}
+
+.form-box label {
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.form-box label {
+  color: black;
+}
+
+.form-box input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.1 ease-in-out;
+  margin-top: 10px;
+  transition: all 100ms ease;
+}
+
+.form-box button:hover,
+.form-box button:hover a {
+  background-color: #ff745f;
+  color: white;
+}
+
+.form-box a {
+  color: #ff745f;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  font-family: montserrat;
+}
+
+.sign_area .main-container {
+  background-color: #ff745f;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+input .checkbox{
+  font-family: montserrat;
+}
+
+@media (max-width: 700px) {
+  .form-box {
+    width: 90%;
+  }
+}

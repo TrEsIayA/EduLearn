@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: safira_march;
+  src: url(safira.ttf);
+}
+@font-face {
+  font-family: codigra;
+  src: url(Codigra.ttf);
+}
+@font-face {
+  font-family: montserrat;
+  src: url(Montserrat-Medium.ttf);
+}
+
+#main-courses-container {
+  margin-top: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  font-family: codigra;
+}
+
+.courses-container {
+  height: 100%;
+  display: flex;
+  padding: 50px;
+  width: 100%;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.course-box {
+  background-color: rebeccapurple;
+  padding: 50px 20px;
+  margin: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.course-info h3 {
+  font-family: safira_march;
+  font-weight: xx-bold;
+  letter-spacing: 1.5px;
+}
+.course-info p {
+  font-family: montserrat;
+  letter-spacing: 1.2px;
+}
+@media (max-width: 768px){
+  .courses-container{
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar a{
+    padding: 8px 10px;
+    align-items: center;
+  }
+}
